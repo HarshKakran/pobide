@@ -1,0 +1,15 @@
+Django==3.2
+pandas==1.3.0
+python-dateutil==2.7.3
+python-decouple==3.4
+python3-openid==3.2.0
+scikit-learn==0.24.2
+sklearn==0.0
+tensorflow==2.5.0
+tensorflow-estimator==2.5.0
+tokenizers==0.10.3
+transformers==4.9.1
+wikipedia==1.4.0
+# ---IMPORTANT--- #
+#download the variables(450mb) folder from this google_drive link: https://drive.google.com/drive/folders/114O96Jhxchf5wwsIMiC0OI4BT4AiYyD6?usp=sharing
+#and replace the variable folder in saved_models with the one in googledrive download
