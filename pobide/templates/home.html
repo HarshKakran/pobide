@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pobide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    {% load static %}
+    <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div>
+        <img
+          src="{% static 'pobide_ai_transparent.png' %}"
+          width="200px"
+          alt=""
+        />
+      </div>
+    </nav>
+    <div class="container2">
+      <div class="input">
+        <form action="/verify" method="POST">
+          {% csrf_token %}
+          <textarea
+            class="textarea"
+            placeholder="Enter news in the text box, pobide.Ai will scan it and tell you whether it seems true or false, and the political bias of the text!"
+            name="input"
+          ></textarea>
+          <button type="submit" class="button">Verify</button>
+        </form>
+      </div>
+      <!-- <div class="waiting">
+        <div>Waiting...</div>
+      </div> -->
+    </div>
+    <div class="disclaimer">
+      Disclaimer: Please realize that the verification is not always correct,
+      please check established fact check sites if you want more accurate
+      results. Being categorized using our
+      classification algorithm only means that the input text is similar to
+      that of other text with the same category, it does not mean for certain
+      that the category established is correct.
+    </div>
+
+    <!-- Yoinked Code -->
+    <footer class="site-footer">
+      <div class="container3">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              PoBiDe.Ai is a project aimed to address the problem of fake
+              information and bias in news. It uses advanced natural language
+              processing and machine learning algorithms to automate the
+              detection of fake news and political bias. The namesake of PoBiDe
+              comes from the first two letters of every word in "Political Bias
+              Detector"; pair this with artificial intelligence, and you have
+              our name, "PoBiDe.Ai".
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2021 All Rights Reserved by
+              <a href="">Pobide.Ai</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
