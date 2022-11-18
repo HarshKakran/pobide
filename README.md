@@ -6,6 +6,7 @@ PoBiDe.Ai is a project aimed to address the problem of fake information and bias
 The namesake of PoBiDe comes from the first two letters of every word in "Political Bias Detector"; pair this with artificial intelligence, and you have our name, "PoBiDe.Ai".
 
 ## Demo: `https://youtu.be/GOBEN8VFyJ0`
+## Jupyter Notebook: `https://www.kaggle.com/harshkakran00/bert-tf-implementation`
 
 # ---IMPORTANT--- #
 To run the code download the variables(450mb) folder from this google drive link: https://drive.google.com/drive/folders/114O96Jhxchf5wwsIMiC0OI4BT4AiYyD6?usp=sharing
